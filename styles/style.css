@@ -1,3 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: auto
+    
+}
+
+
+/* div becomes a "flex element*/
+/**div {
+    
+    display: flex;
+    flex-direction: row;
+}
+**/
+
 /*
 Colors:
 
@@ -6,3 +28,9 @@ Green: #00B172
 White: #FFF
 
 */
+/*
+	display: flex;
+	flex-direction: row // row-reverse // column // column-
+	flex-wrap: nowrap // wrap // wrap-reverse
+	justify-content: flex-start // flex
+    */
