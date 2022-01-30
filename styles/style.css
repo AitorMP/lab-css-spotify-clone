@@ -1,25 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    height: 100%;
-    width: auto
-    
-}
-
-
-/* div becomes a "flex element*/
-/**div {
-    
-    display: flex;
-    flex-direction: row;
-}
-**/
-
 /*
 Colors:
 
@@ -28,9 +6,144 @@ Green: #00B172
 White: #FFF
 
 */
-/*
-	display: flex;
-	flex-direction: row // row-reverse // column // column-
-	flex-wrap: nowrap // wrap // wrap-reverse
-	justify-content: flex-start // flex
-    */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*---- header, nav bar and background ----*/
+
+nav {
+  width: 90%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 1em 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  font-size: 2em;
+}
+
+nav img {
+  display: block;
+  margin-right: auto;
+  height: 6em;
+}
+
+header {
+  background-image: url('../images/landing.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 16em 0;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+header h1 {
+  font-size: 4em;
+  font-weight: heavy;
+  margin-bottom: 1em;
+}
+
+header p {
+  font-weight: 1em;
+  font-size: 1.2em;
+}
+
+/*----Features----*/
+
+section {
+  padding: 5em;
+}
+
+section h2 {
+  font-size: 4.5em;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #00b172;
+  margin-bottom: 3em;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list {
+  flex-direction: row;
+}
+
+.features {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+}
+
+.features img {
+  max-width: 100%;
+  width: 20em;
+  display: block;
+}
+
+section h4 {
+  font-size: 2em;
+  color: #00b172;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  padding: 3em;
+  flex-direction: column;
+  color: white;
+  background-color: #00b172;
+  font-size: 1.6em;
+}
+
+footer {
+  flex-direction: row;
+  background-image: url('../images/spotify-icon-white.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 6em;
+  gap: 6em;
+}
+
+footer h2 {
+  text-decoration: underline;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer img {
+  display: block;
+  width: 27em;
+  margin: 0 auto;
+}
